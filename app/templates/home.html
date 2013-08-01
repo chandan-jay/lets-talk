@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<h4>Numbers to dial<h4>
+  <div>
+    <form name="input" action="/call/" method="GET">
+	    <input type="text" name="dialNumber1" placeholder="Source Number"><br>
+	    <input type="text" name="dialNumber2" placeholder="Destination Number">
+	    <input type="submit" value="Submit" class="btn">
+	</form>
+  </div>
+<br>
+<p class="instruction"> Regular number must be prefixed with country code but without the ‘+’ sign).<br>
+For e.g, to dial a number in the USA, the number could be, 15677654321, with '1' for the country code. </p>
+{% endblock %}
+

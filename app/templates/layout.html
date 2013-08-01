@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lets Talk</title> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> 
+  </head>
+  <body>
+    <header>
+      <div class="container-custom">
+        <div class="span2">
+          <h4 class="logo">Let's Talk</h4>
+        </div>
+        <div class="span2 offset1">
+          <img src="{{ url_for('static', filename='img/logo.png') }}" >
+        </div>
+      </div>
+    </header>
+    <div class="container-custom">
+      <div class="hero-unit">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+     
+  </body>
+</html>
